@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<VBox xmlns:fx="http://javafx.com/fxml/1" alignment="CENTER" xmlns="http://javafx.com/javafx/17.0.2-ea"
+      fx:controller="dev.joseluisgs.holajavafxdam.controllers.SaludoController">
+    <children>
+        <Label text="Hola Alumno/a">
+            <font>
+                <Font name="System Bold" size="24.0"/>
+            </font>
+        </Label>
+        <GridPane>
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="158.0" minWidth="10.0" prefWidth="86.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="262.0" minWidth="10.0" prefWidth="243.0"/>
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+            </rowConstraints>
+            <children>
+                <Label text="Nombre:"/>
+                <Label text="Edad:" GridPane.rowIndex="1"/>
+                <TextField fx:id="textNombre" prefHeight="26.0" prefWidth="223.0" GridPane.columnIndex="1"/>
+                <TextField fx:id="textEdad" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+                <Label text="E-Mail:" GridPane.rowIndex="2"/>
+                <TextField fx:id="textEmail" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+            </children>
+            <padding>
+                <Insets bottom="5.0" left="15.0" right="15.0" top="10.0"/>
+            </padding>
+        </GridPane>
+        <HBox alignment="CENTER" prefHeight="41.0" prefWidth="329.0" spacing="20.0">
+            <children>
+                <Button fx:id="botonSaludar" mnemonicParsing="false" text="Saludar"/>
+                <Button fx:id="botonLimpiar" mnemonicParsing="false" text="Limpiar"/>
+            </children>
+            <padding>
+                <Insets bottom="5.0" top="5.0"/>
+            </padding>
+        </HBox>
+    </children>
+    <padding>
+        <Insets top="20.0"/>
+    </padding>
+</VBox>

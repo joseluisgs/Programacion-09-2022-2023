@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+<VBox xmlns:fx="http://javafx.com/fxml/1" alignment="CENTER" prefHeight="142.0" prefWidth="136.0" spacing="20.0"
+      xmlns="http://javafx.com/javafx/17.0.2-ea"
+      fx:controller="dev.joseluisgs.routesmanagerfx.controllers.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+    <Label fx:id="welcomeText"/>
+    <Button onAction="#onHelloButtonClick" text="Saludar"/>
+    <Button fx:id="botonIr" mnemonicParsing="false" text="Abrir Otra"/>
+    <TextField fx:id="textViewModel"/>
+    <Button fx:id="botonCambiarTema" mnemonicParsing="false" text="Cambiar tema"/>
+</VBox>
